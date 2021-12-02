@@ -7,12 +7,12 @@
        </div>
        <nav>
                    <ul>
-                        <li @click="toggleDetails" ><strong><a href="#">Home</a></strong>{{ home }}</li>
+                        <li @click="toggleDetails"><strong><a href="#">Home</a></strong>{{ home }}</li>
                         <li @click="toggleskill"><strong><a href="#">Skill</a></strong>{{ skill }}</li>
                         <li @click="togglesproject"><strong><a href="#">Projects</a></strong>{{ projects }}</li>
                         <li @click="toggleabout"><strong><a href="#">About</a></strong>{{ about }}</li>
-                        <li @click="togglecontacts"><strong><a href="#">Contacts</a></strong>{{ contacts }}</li>
-                     </ul>
+                        <li @click="togglecontacts"><strong><a href="#">Contacts</a></strong>{{ contacts }}</li> 
+                    </ul>
        </nav>
       </header><br><br>
         <!-- Hero tagline & name -->
@@ -88,7 +88,7 @@
                  <section>
                         <div class="card">
                             <h2>Projects 2</h2><br>
-                            <p><span>Learning Resources App</span>
+                            <p><span><a v-bind:href="LearningResourceapp">Learning Resources App</a></span>
                                 <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>
                                 Sint nam facilis commodi laudantium id sequi ipsam ab?
                                 Obcaecati ullam deleniti a dolorum dicta, vitae aperiam sit, aspernatur cum magnam aut!
@@ -186,8 +186,8 @@
             <div class="contact-items"> 
             <div class="contact-item"> 
             <div class="icon"> 
-            <img src="https://img.icons8.com/bubbles/100/000000/phone.png"> 
-            </div> 
+            <img src="https://img.icons8.com/bubbles/100/000000/phone.png">
+            </div>
             <div class="contact-info"> 
             
             <h2>+09109366801</h2> 
@@ -196,7 +196,7 @@
             </div> 
             <div class="contact-item"> 
             <div class="icon"> 
-            <img src="https://img.icons8.com/bubbles/100/000000/new-post.png"> 
+             <img src="https://img.icons8.com/bubbles/100/000000/new-post.png"> 
             </div> 
             <div class="contact-info"> 
             <h1>Email</h1> 
@@ -215,21 +215,26 @@
             </div> 
             </div> 
         </div> 
+
+       <div>
+       <contact-form/>
+     </div>
   </section> 
   <!-- End Contact Section --> 
     </section>
         </div>
+        
     </div>
-    
+ 
 </template>
 
     <script>
-     export default {
-         
+    import ContactForm from './ContactForm.vue'
+     export default {    
       name: 'App',
-//      components: {
-     
-//   },
+      components: {
+      ContactForm
+   },
   props: [
       'home',
       'skill',
@@ -240,6 +245,7 @@
   ],
          data() {
              return {
+                
                  detailsAreVisible: false,
                  skillsvisible: false,
                  projectsvisible: false,
@@ -248,6 +254,7 @@
                  aboutmevisible: false,
                  ResumeLink: 'https://drive.google.com/file/d/1Hvp9T70HnizwM-TreTd0YJ9nncVhEMj7/view?usp=sharing',
                  MonsterLink:'https://github.com/lordelements/Monster-Slayer-Game',
+                 LearningResourceapp: 'https://github.com/lordelements/learning-resource-app',
                  CrudLink: 'https://github.com/lordelements/crudapplication',
                  ListandConditional: 'https://github.com/lordelements/Lists-cond-assignment-problem',
                  LogInform: 'http://localhost/logIn/loginform.php',
@@ -290,6 +297,10 @@
              togglecontacts() {
                  this.contactvisible = !this.contactvisible;
              },
+               togglecontactme() {
+                    this.contactmevisible = !this.contactmevisible;
+               },
+             
              toggleDetailsinfo() {
                  this.aboutmevisible = !this.aboutmevisible;
                  
@@ -297,4 +308,7 @@
          }
       };
     </script>
+
+    
+
 

@@ -12,16 +12,16 @@
                 <h2>My Complete Web Portfolio</h2> 
                 <div class="social-icon"> 
                 <div class="social-item"> 
-                <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"></a> 
+                <a v-bind:href="facebook"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"></a> 
                 </div> 
                 <div class="social-item"> 
-                <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"></a> 
+                <a v-bind:href="instagram"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"></a> 
                 </div> 
                 <div class="social-item"> 
-                <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png"></a> 
+                <a v-bind:href="twetter"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png"></a> 
                 </div> 
                 <div class="social-item"> 
-                <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png"></a> 
+                <a Shref="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png"></a> 
                 </div> 
                 </div> 
                 <p>Copyright © 2021 Element's™ ©. All rights reserved</p> 
@@ -36,7 +36,14 @@ export default {
     name: 'welcome',
     props: {
     msg: String
-  }
+  },
+  data() {
+      return {
+          facebook: 'https://facebook.com',
+          instagram: 'https://instagram.com',
+          twetter: 'https://twetter.com'
+      }
+  },
 }
 </script>
 

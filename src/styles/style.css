@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-  background-image: ("C:/Users/USER/final-project-personal-portfolio/public/img/background.jpeg");
-  background-repeat: no-repeat;
+  /* background-image: url('image\Users\USER\persoanl-portfolio-project\dist\pexil.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat; */
   display: cover;
+  
 }.logo{
     float: right;
     margin: 20px 90px;
@@ -68,7 +71,10 @@ header{
     text-decoration: none;
     color: #000;
     font-weight: bold;
-    }nav ul li a:hover{
+    }nav ul li ul li a{
+      display: block;
+    }
+    nav ul li a:hover{
 color: crimson;
 }
 .projects .skill{
@@ -78,7 +84,7 @@ color: crimson;
   display: inline-block;
 }
 .card{
-  display: inline-block;
+  display: flex;
   max-width: 30rem;
   height: auto;
   margin: 0 auto;
@@ -89,8 +95,10 @@ color: crimson;
   border-radius: 25px;
 }
 .projects .skill .card p a{
+  position: absolute;
     font-size: 10px;
     text-decoration: none;
+    
 }.skill, .projects h1, p{
     text-align: center;
     margin: 10px 20px;
@@ -163,19 +171,22 @@ color: crimson;
   #contact .contact {
     flex-direction: column;
     max-width: 1200px;
-    display: inline-block;
+    /* display:flex; */
   }
   #contact .contact-items {
-    width: 400px;
+    width: 60rem;
+    margin: 5rem 10rem 5rem 10rem;
+    /* display: block; */
   }
   #contact .contact-item {
+    /* position: absolute; */
     width: 80%;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
     padding: 30px;
     margin: 30px;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -245,4 +256,10 @@ color: crimson;
     font-size: 1.2rem;
   }
   /* End Footer */
-  
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }

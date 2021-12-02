@@ -16,6 +16,7 @@
            Working=""
         ></portfolio><br>
   <welcome msg="Welcome to Element's Personal Portfolio Website"/>
+ 
   </div>
 </template>
 
@@ -69,7 +70,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #407fbd;
+  color: #103c68;
   margin-top: 60px;
 }
 </style>
