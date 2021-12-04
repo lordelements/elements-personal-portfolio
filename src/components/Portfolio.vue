@@ -15,6 +15,9 @@
                     </ul>
        </nav>
       </header><br><br>
+      <!-- <div class="image">
+            <img src="src/image/crop_image.jpg">
+        </div> -->
         <!-- Hero tagline & name -->
                     <div class="detail" v-if="detailsAreVisible">
                         <h1>Hello I'm  Elemento<span> Andrian O.</span></h1>
@@ -189,7 +192,7 @@
             <img src="https://img.icons8.com/bubbles/100/000000/phone.png">
             </div>
             <div class="contact-info"> 
-            
+            <h1>Cellphone number</h1>
             <h2>+09109366801</h2> 
             <h2>+09973844979</h2> 
             </div> 

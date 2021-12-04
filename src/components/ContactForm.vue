@@ -62,6 +62,7 @@ export default {
             this.emailme = '';
             console.log('Password: ' + this.passwordInput);
             this.passwordInput = '';
+
         },
         togglecontactme() {
                     this.contactmevisible = !this.contactmevisible;
@@ -93,6 +94,7 @@ export default {
 </script>
 
 <style scoped>
+
     .form-control.invalid textarea{
         border-color: red;
     }
@@ -119,7 +121,7 @@ export default {
             text-align: center;
         }
         .form-group{
-          margin: 10px;
+          margin: 5px 10px 10px 5px;
         }p{
           font-size: 10px;
           color: black;
@@ -137,6 +139,8 @@ export default {
             margin-bottom: 16px;
             resize: none;
             border-bottom: 1px solid #333;
+        }h3{
+         color: #fff;
         }
         input{
             overflow: hidden;
@@ -152,6 +156,8 @@ export default {
                 width: 15rem;
                 height: 3rem;
                 margin-top: 1rem;
+                }input, [type="button"]{
+                 background: #fff;
                 }
               button{    
                 height: 50px;

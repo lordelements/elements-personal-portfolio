@@ -52,12 +52,12 @@ export default {
    h1{
        font-size: 35px;
        font-style: inherit;
-       color: black;
+       color: #fff;
        font-weight: 600;
    }p{
        font-size: 20px;
        font-style: inherit;
        font-weight: 400;
-       color: #333;
+       color: white;
    }
 </style>

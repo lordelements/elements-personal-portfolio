@@ -1,19 +1,19 @@
 <template>
   <div>
   <portfolio
-            home=""
-            skill=""
-            projects=""
-            about=""
-            contacts=""
-            Name=""
-            MotherName=""
-           Email=""
-           Address=""
-           Birthday=""
-           GraduatedinElementary=""
-           GraduatedinHighschool=""
-           Working=""
+          home=""
+          skill=""
+          projects=""
+          about=""
+          contacts=""
+          Name=""
+          MotherName=""
+          Email=""
+          Address=""
+          Birthday=""
+          GraduatedinElementary=""
+          GraduatedinHighschool=""
+          Working=""
         ></portfolio><br>
   <welcome msg="Welcome to Element's Personal Portfolio Website"/>
  
